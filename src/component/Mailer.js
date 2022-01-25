@@ -5,11 +5,6 @@ import emailjs from 'emailjs-com';
 
 export default function Mailer() {
 
-    const [userData, setUserData] = useState({
-        name: "",
-        user_email: "",
-        message: "",
-    });
 
     function sendEmail(e) {
         e.preventDefault();
@@ -22,12 +17,6 @@ export default function Mailer() {
             ).then( res=> {
 
                 alert("Your Form has been Successfully Submitted. You'll be Contacted if this is not a Test/Spam Message.");
-            
-                setUserData({
-                    name: "",
-                    user_email: "",
-                    message: "",
-                });
             
             }).catch(err=> alert("Form Details not Submitted! Kindly Try Again."));
 
