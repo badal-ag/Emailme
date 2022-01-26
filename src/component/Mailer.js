@@ -10,10 +10,10 @@ export default function Mailer() {
         e.preventDefault();
 
         emailjs.sendForm(// After Signing Up in EmailJS
-            "service_7n171er",//change this with your Email Service Id by creating a New Email Service
-            "template_l4w71ln", //change this with your Email Template Id by creating a New Template
+            "your_service_id",//change this with your Email Service Id by creating a New Email Service
+            "your_template_id", //change this with your Email Template Id by creating a New Template
             e.target, 
-            "user_Yx4ex9c0CHeDShmearzoa" // change this with your User Id by Going in Integrations and copying the one starting with user........
+            "your_user_id" // change this with your User Id by Going in Integrations and copying the one starting with user........
             ).then( res=> {
 
                 alert("Your Form has been Successfully Submitted. You'll be Contacted if this is not a Test/Spam Message.");
